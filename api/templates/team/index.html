@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content">
+<p class="title">Team index</p>
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+        {% for item in items %}
+            <tr>
+                <td>{{ item }}</td>
+            </tr>
+        {% endfor %}
+</table>
+</div>
+{% endblock %}

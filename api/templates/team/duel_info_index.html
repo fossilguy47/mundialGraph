@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content">
+<p class="title">Duel info index</p>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Result</th>
+        <th>Name</th>
+    </tr>
+    {% for item in items %}
+    <tr>
+        {% for i in item %}
+        <td> {{ i }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+</div>
+{% endblock %}

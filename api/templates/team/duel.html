@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content">
+<p class="title">Add Match</p>
+<form action="" method="post">
+    <p class="label">
+        {{ form.name.label }} <br>
+        {{ form.name(size=30, class_="form-field")}} <br>
+        {{ form.team_name.label }} <br>
+        {{ form.team_name(size=30, class_="form-field")}} <br>
+        {{ form.duel_result.label }} <br>
+        {{ form.duel_result(size=30, class_="form-field")}} <br>
+    </p>
+    <p class="submit">{{ form.submit(class_="form-button") }}</p>
+</form>
+</div>
+{% endblock %}
